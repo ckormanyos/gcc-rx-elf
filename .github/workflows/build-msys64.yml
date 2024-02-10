@@ -57,7 +57,7 @@ jobs:
           rm -rf /d/a/gcc-rx-elf/gcc-rx-elf/local/gcc-${{ matrix.branchname }}-rx-elf/lib/bfd-plugins
           cd /d/a/gcc-rx-elf/gcc-rx-elf/real-time-cpp/ref_app
           PATH=/d/a/gcc-rx-elf/gcc-rx-elf/local/gcc-${{ matrix.gccversion }}-rx-elf/bin:"$PATH"
-          ./target/build/build.sh rl78 rebuild
+          ./target/build/build.sh rx63n rebuild
           ls -la bin/ref_app.elf bin/ref_app.hex
           ls -la bin/ref_app.map bin/ref_app.s19
           ls -la bin/ref_app_cppfilt.txt

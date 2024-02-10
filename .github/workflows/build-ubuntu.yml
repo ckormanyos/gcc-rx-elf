@@ -48,7 +48,7 @@ jobs:
           git clone -b master --depth 1 https://github.com/ckormanyos/real-time-cpp.git ${{ runner.workspace }}/gcc-rx-elf/real-time-cpp
           cd ${{ runner.workspace }}/gcc-rx-elf/real-time-cpp/ref_app
           PATH=${{ runner.workspace }}/gcc-rx-elf/local/gcc-${{ matrix.gccversion }}-rx-elf/bin:"$PATH"
-          ./target/build/build.sh rl78 rebuild
+          ./target/build/build.sh rx63n rebuild
           ls -la bin/ref_app.elf bin/ref_app.hex
           ls -la bin/ref_app.map bin/ref_app.s19
           ls -la bin/ref_app_cppfilt.txt
